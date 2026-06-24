@@ -11,7 +11,7 @@ class Gitmap < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.7/gitmap_0.1.7_darwin_amd64.tar.gz"
-      sha256 "24855994a2caf4ae3f48c5a31143dbf6fa29d4099aacdf22d75b9cd5acbb0cf9"
+      sha256 "fdc542795863bd950500d8727b6855c7677c2ee47ce0858ebfc8c0136ce7006e"
 
       define_method(:install) do
         bin.install "gitmap"
@@ -19,7 +19,7 @@ class Gitmap < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.7/gitmap_0.1.7_darwin_arm64.tar.gz"
-      sha256 "863ee887da89d1a363166c4d114bd077e6aa24ccb6e65c3f8f18366339154ff9"
+      sha256 "58ad52037ab416da05a2f35ac65694d3e8bd99b674f098326205843678df8d68"
 
       define_method(:install) do
         bin.install "gitmap"
@@ -30,14 +30,14 @@ class Gitmap < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.7/gitmap_0.1.7_linux_amd64.tar.gz"
-      sha256 "785e3f9af4d871e8bf9df53ddc9c6d9246d1d406f76c2bd018b5e95747e7cc50"
+      sha256 "1fb98c1f4093cc497c9951622aa072422402e74043196fdbf4daa8f30c315d21"
       define_method(:install) do
         bin.install "gitmap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.7/gitmap_0.1.7_linux_arm64.tar.gz"
-      sha256 "d138eb59343a612b74cbcf1bfb65936b183db5ce8548396de5ee786b3f07819b"
+      sha256 "34065120919cc1a1822af8ee52935b9d38265ed58eb1e41f081534212bc14622"
       define_method(:install) do
         bin.install "gitmap"
       end
