@@ -5,21 +5,21 @@
 class Gitmap < Formula
   desc "TUI for managing multiple git repositories"
   homepage "https://github.com/yhkl-dev/gitmap"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.10/gitmap_0.1.10_darwin_amd64.tar.gz"
-      sha256 "d7e971b5346b6ca1e42576c7e022ade72f7cd621e480846fba959833202daa76"
+      url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.11/gitmap_0.1.11_darwin_amd64.tar.gz"
+      sha256 "6c064d58a6a2d699d4faca006129d9e4b2464ab1c32da64765f3eb45016780a6"
 
       define_method(:install) do
         bin.install "gitmap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.10/gitmap_0.1.10_darwin_arm64.tar.gz"
-      sha256 "9f3d172ce4958a34e256c7d62ea7176d913ba5bd223d2d2756f286ffddcb95c6"
+      url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.11/gitmap_0.1.11_darwin_arm64.tar.gz"
+      sha256 "156cf0b6b47fb4e5b86ba6bc1b4c4b09a61779ceea524005eaed46edee6df63c"
 
       define_method(:install) do
         bin.install "gitmap"
@@ -29,15 +29,15 @@ class Gitmap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.10/gitmap_0.1.10_linux_amd64.tar.gz"
-      sha256 "63ec49343e9da9536f7a7d5d43c33aa915489872d6a7d9504e9d4e817e100f11"
+      url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.11/gitmap_0.1.11_linux_amd64.tar.gz"
+      sha256 "db48e55811729146339edb16390a1c0c9acff7a2a1b728dbee98a2129ed13ac2"
       define_method(:install) do
         bin.install "gitmap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.10/gitmap_0.1.10_linux_arm64.tar.gz"
-      sha256 "7c9c843024b34ae898679ef2e28ce16d9f612263adb4a63154bc2384518924c8"
+      url "https://github.com/yhkl-dev/gitmap/releases/download/v0.1.11/gitmap_0.1.11_linux_arm64.tar.gz"
+      sha256 "1855bc864f4f81656253a11c70781192731a014d461f1818d9ec7fda058e6887"
       define_method(:install) do
         bin.install "gitmap"
       end
